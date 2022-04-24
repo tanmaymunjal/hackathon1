@@ -372,9 +372,7 @@ def create_account(your_email):
     smtp_server.login(email, password)
     smtp_server.sendmail(email, your_email, text)
     smtp_server.close()
-
-	return addr,public_key
-
+    return addr,public_key
 
 # command to delete all entries from table to save memory and minimise name clashes in future
 # for temporary purposes in computer project , not to be imported in production model for obvious reasons
